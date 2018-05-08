@@ -5,10 +5,10 @@ def key_for_min_value(name_hash)
   test = "" 
   name_hash.each do |key, value|
     if test == "" 
-      test = key 
+      test = :key 
     else 
       if test > value 
-        test = key 
+        test = :key 
       end 
     end 
   end 
