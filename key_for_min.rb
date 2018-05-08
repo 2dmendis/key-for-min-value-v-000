@@ -4,6 +4,9 @@
 def key_for_min_value(name_hash)
   test = ""
   name_hash.collect do |name, num|
+    if name_hash = ""
+      test = nil 
+    else 
     if test == "" 
       test = name 
     else 
@@ -11,6 +14,7 @@ def key_for_min_value(name_hash)
         test = name 
       end 
     end 
+  end 
     
   end 
   test
